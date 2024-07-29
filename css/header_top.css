@@ -1,11 +1,27 @@
 @charset "UTF-8";
-.headerTop{
-    width: 100%;
-    height: 100px;
+.headerTop {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: #cfed6b;
 }
-.header_Logo{
-    width: 100%;
+.headerTop .inner {
+  width: 100%;
+  height: 100px;
+  position: relative;
 }
-.header_Logo img{
-    width: 100%;
+.headerTop .inner img {
+  width: 30%;
+}
+.header_such {
+  width: 100px;
+  height: 30px;
+}
+
+.header_icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
 }
