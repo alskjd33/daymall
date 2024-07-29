@@ -1,11 +1,35 @@
 @charset "UTF-8";
-@import url("headertop.css");
+@import url("header_top.css");
 @import url("header_bottom.css");
-@import url("copon.css");
-@import url("slide_baener.css");
+@import url("coupon.css");
+@import url("slide_banner.css");
 @import url("best.css");
 @import url("today.css");
 @import url("timesale.css");
 @import url("oneday.css");
-@import url("cate.css");
+@import url("categorie.css");
 @import url("footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  html{
+    font-size: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    vertical-align: middle;
+    border: 0;
+  }
+  body { 
+     font-family: "Noto Sans KR", sans-serif;
+  }
+  /* 공통영역 */
+  .inner{
+    width: 1200px;
+  }
