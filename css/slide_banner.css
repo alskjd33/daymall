@@ -7,7 +7,7 @@
     width: 100%;
     height: 400px;
 }
-.swiper-button-next:after, .swiper-button-prev:after {
+.sw-banner .swiper-button-next:after, .sw-banner .swiper-button-prev:after {
     font-size: 1.2vw;
     font-weight: bold;
     position: absolute;
@@ -15,22 +15,33 @@
     left: 50%;
     color: #fff;
 }
-.swiper-button-prev:after{
+.sw-banner .swiper-button-prev:after{
     transform: translate(-60%, -50%);
 }
-.swiper-button-next:after{
+.sw-banner .swiper-button-next:after{
     transform: translate(-40%, -50%);
 }
-.swiper-button-next, .swiper-button-prev {
+.sw-banner .swiper-button-next, .sw-banner .swiper-button-prev {
     display: block;
     width: 3vw;
     height: 3vw;
     background-color: rgba(0,0,0,0.2);
     border-radius: 50%;
+    opacity: 0;
+    transition: all 0.5s;
 }
-.swiper-button-prev{
+.slide-banner:hover .sw-banner .swiper-button-prev{
+    opacity: 1;
+}
+.slide-banner:hover .sw-banner .swiper-button-next{
+    opacity: 1;
+}
+.sw-banner .swiper-button-prev{
     left: 20%;
 }
-.swiper-button-next{
+.sw-banner .swiper-button-next{
     right: 20%;
+}
+.sw-banner .swiper-pagination-bullet{
+    background-color: #333;
 }
