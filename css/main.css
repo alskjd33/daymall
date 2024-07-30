@@ -48,5 +48,44 @@
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-    margin: 0 auto;
+    margin: 45px auto 0;
+  }
+  .sw-bt{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+    font-size: 0;
+    position: relative;
+    /* z-index: 99; */
+  }
+  .sw-bt::before {
+    content: "";
+    width: 15px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 8px);
+    background: url("../images/angle-left-solid.svg")no-repeat center;
+  }
+  .bt-next::before {
+    transform: scaleX(-100%);
+  }
+  .bt-prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+  }
+  .bt-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 99;
+    transform: translate(50%, -50%);
   }
