@@ -7,11 +7,11 @@ window.addEventListener("load", function(){
         loop:true,
         slidesPerView: 1,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".sw-banner .bt-next",
+            prevEl: ".sw-banner .bt-prev",
         },
         pagination: {
-            el: ".swiper-pagination",
+            el: ".sw-banner .swiper-pagination",
         },
     })
 })
