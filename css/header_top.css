@@ -1,37 +1,60 @@
 @charset "UTF-8";
+/* 해더탑 */
 .headerTop {
   width: 100%;
-
   background-color: #cfed6b;
+  border-bottom: 1px solid #fff;
 }
 .headerTop .inner {
   position: relative;
-  padding:20px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
 }
-.headerTop .inner img {
+.headerTop .inner a {
   width: 20%;
 }
+.headerTop .inner img {
+  width: 100%;
+}
 .header_such {
-    padding:0px;
-    position: absolute;
-    top: 20px;
-    left: 35%;
+  padding: 0px;
+  position: relative;
   width: 500px;
   height: 50px;
   background-color: #fff;
   border-radius: 30px;
 }
-.header_such a>i{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 30px;
-    color: #BEBEBE;
+.header_such a > i {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  color: #bebebe;
 }
-.header_icon a{
-    padding:20px;
+.header_icon {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.header_icon a {
+  /* display:block; */
   position: relative;
   font-size: 30px;
   color: #434647;
 }
+/* 해더바텀 */
+.headerBottom{
+  border-top: ;
+  background-color: #cfed6b;
+}
+.h_cate{
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+}
+.h_cate i{
 
+}
+.h_cate_1{display: none;}
+.h_cate_2{display: none;}
