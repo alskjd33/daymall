@@ -48,12 +48,16 @@
   border-top: ;
   background-color: #cfed6b;
 }
+.headerBottom > .inner{
+  height: 50px;
+}
 .h_cate{
+  width: 20%;
+  height:100%;
   display: flex;
   gap: 5px;
   font-size: 20px;
-}
-.h_cate i{
+  background-color: #A6DD24;
 
 }
 .h_cate_1{display: none;}
