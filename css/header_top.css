@@ -34,7 +34,7 @@
 }
 .header_icon {
   display: flex;
-  gap: 40px;
+  gap: 60px;
   align-items: center;
 }
 .header_icon > a {
@@ -54,7 +54,7 @@
   align-items: center;
 }
 .h_cate {
-  width: 20%;
+  width: 232px;
   height: 100%;
   display: flex;
   gap: 10px;
@@ -107,11 +107,15 @@
   color: #000;
 }
 /* 카테고리 호버 */
-/* h_b_right */
+/* 해더 하단 옆에부분*/
 .h_b_right {
+  width: calc(100% - 232px);
   display: flex;
   justify-content: space-between;
   align-items:center ;
+}
+.h_b_right a{
+  padding-left: 30px;
 }
 /* 해더메뉴바 */
 .h_menu{
@@ -121,5 +125,5 @@
 }
 /* 로그인 회원가입 */
 .login {
-  font-size: 20PX;
+  font-size: 15PX;
 }
