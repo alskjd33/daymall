@@ -1,21 +1,46 @@
 @charset "UTF-8";
+/* 오른쪽 */
 .timesale {
+  margin-top: 30px;
   width: 100%;
+  background-color: #ececec;
 }
-.inner {
+.timesale .inner {
   width: 100%;
+  display: flex;
 }
 .timesale-title {
-    width: calc(100% / 2)
-
+  width: calc(100% / 2);
 }
+.timesale-title .title {
+  line-height: 40px;
+  margin: 0 0 20px;
+}
+.timesale-title span {
+  font-size: 14px;
+  color: #333;
+}
+
+.timesale-title i {
+  font-size: 26px;
+  color: #333;
+  display: inline-block;
+margin-top: 40px;
+}
+.timesale-title p{
+  font-size: 26px;
+  color: #333;
+  display: inline-block;
+margin:40px 0 0 5px;
+}
+/* 왼쪽 */
 .time-item-info {
   width: 100%;
 }
 .timesale-banner > img {
-  width: 800px;
-  height: 400px;
+  width: 100%;
 }
+
 .timesale-bt {
   width: 800px;
   display: block;
@@ -26,4 +51,12 @@
   padding: 8px 80px;
   margin-top: 15px;
   font-weight: bold;
+}
+.time-item-info-list{
+  font-size: 16px;
+  color: #333;
+  margin-top: 15px;
+}
+.time-item-info-lis{
+  margin: 15px 0 15px 0;
 }
