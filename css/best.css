@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 /* 공통 으로 사용할 부분 */
+
+.best-slide{
+    position: relative;
+}
 .item-img{
     width: 250px;
     height: 320px;
@@ -45,6 +49,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
+    line-height: 26px;
+    /* background-color: lightblue; */
 }
 .item-info-list li .orignal-price{
     font-size: 13px;
