@@ -1,1 +1,29 @@
 @charset "UTF-8";
+.timesale {
+  width: 100%;
+}
+.inner {
+  width: 100%;
+}
+.timesale-title {
+    width: calc(100% / 2)
+
+}
+.time-item-info {
+  width: 100%;
+}
+.timesale-banner > img {
+  width: 800px;
+  height: 400px;
+}
+.timesale-bt {
+  width: 800px;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #bebebe;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 8px 80px;
+  margin-top: 15px;
+  font-weight: bold;
+}
