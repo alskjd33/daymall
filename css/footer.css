@@ -1,1 +1,78 @@
 @charset "UTF-8";
+
+.footer{
+    position: relative;
+    width: 100%;
+}
+.ft-top{
+    width: 100%;
+    background-color: #eee;
+    border-bottom: 1px solid #666;
+}
+.ft-bottom{
+    width: 100%;
+    background-color: #eee;
+}
+.ft-top > .inner{
+    padding: 0;
+}
+.ft-bottom > .inner{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 푸터 상단 */
+.company-intro{
+    display: flex;
+    padding: 15px 20px;
+    font-size: 13px;
+    gap: 40px;
+}
+/* 푸터 하단 */
+.ft-logo{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.ft-logo img{
+    width: 100%;
+}
+.ft-bottom-left p{
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+/* 푸터 하단 오른쪽 */
+.ft-bottom-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.sns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.sns li p{
+    font-size: 13px;
+}
+.sns li i{
+    font-size: 45px;
+}
+/* QR */
+.QR{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.QR li{
+    font-size: 13px;
+}
+.QR li a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+}
