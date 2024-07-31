@@ -8,6 +8,7 @@
 .timesale .inner {
   width: 100%;
   display: flex;
+  padding: 100px 20px;
 }
 .timesale-title {
   width: calc(100% / 2);
