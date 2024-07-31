@@ -20,6 +20,7 @@
     width: 120px;
     height: 36px;
     border: 1px solid #d9d9d9;
+    border-radius: 5px;
 }
 .item-bt span a{
     color: #333;
@@ -33,4 +34,36 @@
 }
 .heart-bt a i{
     color: #F93C3C;
+}
+.item-info{
+    width: 250px;
+}
+.item-info-list li h3{
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+.item-info-list li .orignal-price{
+    font-size: 13px;
+    color: #bfbfbf;
+    padding-top: 10px;
+    text-decoration: line-through;
+}
+.item-info-list li b{
+    font-size: 16px;
+    font-weight: 500;
+}
+.item-info-list li b span{
+    color: #F93C3C;
+}
+.item-info-list li .review{
+    font-size: 12px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+.item-info-list li .review i{
+    padding-right: 3px;
 }
