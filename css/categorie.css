@@ -34,8 +34,15 @@
 .cate-title li:last-child {
   border-right: 1px solid #f1f1f1;
 }
-.categorie {
+.cate-swiper-area{
   position: relative;
+  width: 100%;
+  height: 464px;
+}
+.cate-swiper-area>.categorie{
+  position: absolute;
+  width: 100%;
+  display: none;
 }
 .cate .full-bt{
     margin-bottom: 45px;

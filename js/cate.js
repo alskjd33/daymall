@@ -44,4 +44,9 @@ window.addEventListener("load",function(){
             prevEl: ".catedog-slide .bt-prev",
         },
     } )
+
+
+    // 카테고리 클릭시 상품리스트 변경
+    const cateList = this.document.querySelectorAll(".cate-title > li")
+    const categorie = this.document.querySelector
 })
