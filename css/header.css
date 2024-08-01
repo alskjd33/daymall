@@ -11,25 +11,33 @@
   padding: 20px;
   justify-content: space-between;
 }
-.headerTop .inner  a {
+.logo{
   width: 20%;
 }
-.headerTop .inner  img {
+.logo img {
   width: 100%;
 }
 .header_such {
-  padding: 0px;
+  padding: 0 20px;
   position: relative;
   width: 500px;
   height: 50px;
   background-color: #fff;
   border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header_such a > i {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 30px;
+.header_such input{
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+.header_such > a > i {
+  /* position: absolute; */
+  /* top: 10px; */
+  /* right: 15px; */
+  font-size: 25px;
   color: #bebebe;
 }
 .header_icon {
@@ -60,15 +68,16 @@
   gap: 10px;
   justify-content: flex-start;
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
   background-color: #a6dd24;
   padding-left: 25px;
   color: #333;
   position: relative;
 }
 .h_cate_title {
+  font-weight: 500;
   height: 50px;
-  line-height: 50px;
+  line-height: 47px;
 }
 .h_cate_1 {
   position: absolute;
@@ -80,6 +89,9 @@
   width: 100%;
   display: none;
 }
+.h_cate:hover .h_cate_1{
+  display: block;
+}
 .h_cate_1 > li {
   width: 100%;
   height: 50px;
@@ -87,6 +99,7 @@
   background-color: #a6dd24;
   font-size: 15px;
   padding-left: 25px;
+  font-weight: 500;
 }
 .h_cate_1 > li > a {
   color: #000;
@@ -97,16 +110,35 @@
   top: 0;
   left: 100%;
   font-size: 15px;
-  /* display: none; */
+  display: none;
   background-color: #fff;
 }
+.hCate1List:hover{
+  background-color: #fff;
+}
+.hCate1List:hover .h_cate_2{
+  display: block;
+}
+/* .hCate1List.active{
+  background-color: #fff;
+}
+.hCate1List.active .h_cate_2{
+  display: block;
+} */
 .h_cate_2 > li {
   background-color: #fff;
-  padding-left: 25px;}
+  padding-left: 25px;
+}
 .h_cate_2 > li > a {
+  color: #666;
+}
+.h_cate_2 > li:hover > a {
   color: #000;
 }
-/* 카테고리 호버 */
+.h_cate_2 > li:hover {
+  background-color: #EFEFEF;
+  font-weight: 700;
+}
 /* 해더 하단 옆에부분*/
 .h_b_right {
   width: calc(100% - 232px);
@@ -121,9 +153,10 @@
 .h_menu{
   display: flex;
   font-size: 17PX;
-
+  font-weight: 500;
 }
 /* 로그인 회원가입 */
 .login {
   font-size: 15PX;
+  font-weight: 500;
 }
