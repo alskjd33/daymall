@@ -1,2 +1,42 @@
 @charset "UTF-8";
-.cateall-slide .;
+.cate {
+  width: 100%;
+}
+.inner {
+  width: 100%;
+}
+.cate-title {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.cate-title li {
+  width: calc(100% / 5);
+  line-height: 50px;
+  font-size: 18px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+  border-right: none;
+  font-weight: 500;
+}
+.cate-title li.active{
+    background: #000;
+    border-radius: 10px;
+}
+.cate-title li.active>a{
+    color: #fff;
+
+}
+.cate-title li >a {
+    color: #000;
+}
+.cate-title li:last-child {
+  border-right: 1px solid #f1f1f1;
+}
+.categorie {
+  position: relative;
+}
+.cate .full-bt{
+    margin-bottom: 45px;
+}
