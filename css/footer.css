@@ -3,15 +3,16 @@
 .footer{
     position: relative;
     width: 100%;
+    background-color:#eee;
 }
 .ft-top{
     width: 100%;
-    background-color: #eee;
+    /* background-color: #eee; */
     border-bottom: 1px solid #666;
 }
 .ft-bottom{
     width: 100%;
-    background-color: #eee;
+    /* background-color: #eee; */
 }
 .ft-top > .inner{
     padding: 0;
