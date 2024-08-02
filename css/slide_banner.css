@@ -26,3 +26,6 @@
 .sw-banner .swiper-pagination-bullet{
     background-color: #333;
 }
+.mb-slide-banner{
+    display: none;
+}
