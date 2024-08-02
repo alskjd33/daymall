@@ -11,7 +11,7 @@
   padding: 20px;
   justify-content: space-between;
 }
-.logo{
+.logo {
   width: 20%;
 }
 .logo img {
@@ -28,7 +28,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.header_such input{
+.header_such input {
   font-size: 18px;
   border: none;
   outline: none;
@@ -50,6 +50,12 @@
   position: relative;
   font-size: 30px;
   color: #434647;
+}
+.header_icon .fa-bars{
+  display: none;
+}
+.header_icon .fa-magnifying-glass{
+  display:none;
 }
 /* 해더바텀 */
 .headerBottom {
@@ -89,7 +95,7 @@
   width: 100%;
   display: none;
 }
-.h_cate:hover .h_cate_1{
+.h_cate:hover .h_cate_1 {
   display: block;
 }
 .h_cate_1 > li {
@@ -113,10 +119,10 @@
   display: none;
   background-color: #fff;
 }
-.hCate1List:hover{
+.hCate1List:hover {
   background-color: #fff;
 }
-.hCate1List:hover .h_cate_2{
+.hCate1List:hover .h_cate_2 {
   display: block;
 }
 /* .hCate1List.active{
@@ -136,7 +142,7 @@
   color: #000;
 }
 .h_cate_2 > li:hover {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   font-weight: 700;
 }
 /* 해더 하단 옆에부분*/
@@ -144,27 +150,72 @@
   width: calc(100% - 232px);
   display: flex;
   justify-content: space-between;
-  align-items:center ;
+  align-items: center;
 }
-.h_b_right a{
+.h_b_right a {
   padding-left: 30px;
 }
 /* 해더메뉴바 */
-.h_menu{
+.h_menu {
   display: flex;
-  font-size: 17PX;
+  font-size: 17px;
   font-weight: 500;
 }
 /* 로그인 회원가입 */
 .login {
-  font-size: 15PX;
+  font-size: 15px;
   font-weight: 500;
 }
 /* 768카테고리 */
-.h_cate_2_768{
-  display: none;
+
+.h_cate768 {
+  width: 232px;
+  height: 100%;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  padding-left: 25px;
+  color: #333;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  z-index: 9;
+}
+.h_cate768 .fa-bars {
+  font-size: 30px;
+  color: #333;
+}
+.h_cate768 li {
+  /* display: none; */
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #a6dd24;
+}
+.h_cate_2_768 {
+  /* display: none; */
+}
+.h_cate_2_768 li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
 }
 /* 768 */
-@media screen and (max-width:1024px){
-  .headerBottom{display: none;}
+@media screen and (max-width: 1024px) {
+  .header_icon .fa-magnifying-glass{
+    display:block;
+  }
+  .header_icon .fa-bars{
+    display:block;
+  }
+  .headerBottom {
+    display: none;
+  }
+  .header_such {
+    display: none;
+  }
+  .header_icon{
+    gap: 30px;
+  }
 }
