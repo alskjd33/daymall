@@ -14,7 +14,7 @@
     opacity: 0;
     transition: all 0.7s;
 }
-.sw-banner:hover .sw-bt{
+.slide-banner:hover .sw-bt{
     opacity: 1;
 }
 .slide-banner .bt-next{
@@ -26,6 +26,23 @@
 .sw-banner .swiper-pagination-bullet{
     background-color: #333;
 }
-.mb-slide-banner{
+.mb-sw-banner .swiper-pagination-bullet{
+    background-color: #333;
+}
+.mb-sw-banner{
     display: none;
+}
+@media screen and (max-width : 1024px) {
+    .sw-banner{
+        display: none;
+    }
+    .mb-sw-banner{
+        display: block;
+    }
+    .slide-banner .bt-next{
+        right: 7%;
+    }
+    .slide-banner .bt-prev{
+        left: 7%;
+    }
 }
