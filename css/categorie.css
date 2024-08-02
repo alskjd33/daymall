@@ -55,3 +55,9 @@
 .cate .full-bt{
     margin-bottom: 45px;
 }
+
+@media screen and (max-width : 1280px){
+  .cate-swiper-area{
+    height: 386px;
+  }
+}

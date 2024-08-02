@@ -73,3 +73,24 @@
 .item-info-list li .review i{
     padding-right: 3px;
 }
+
+@media screen and (max-width : 1280px) {
+    .item-img{
+        width: 200px;
+        height: 256px;
+    }
+    .item-bt{
+        width: 200px;
+    }
+    .item-bt span{
+        width: 98px;
+        height: 32px;
+    }
+    .item-bt span a{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .item-info{
+        width: 200px;
+    }
+}
