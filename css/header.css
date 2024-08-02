@@ -42,8 +42,11 @@
 }
 .header_icon {
   display: flex;
-  gap: 60px;
+  padding-right: 10px;
   align-items: center;
+}
+.fa-user{
+  margin: 0 50px;
 }
 .header_icon > a {
   /* display:block; */
@@ -161,14 +164,20 @@
   font-size: 17px;
   font-weight: 500;
 }
+.h_menu > a{
+  width: 100%;
+  display: block;
+}
 /* 로그인 회원가입 */
 .login {
   font-size: 15px;
   font-weight: 500;
+
 }
 /* 768카테고리 */
 
 .h_cate768 {
+  display:none;
   width: 232px;
   height: 100%;
   gap: 10px;
@@ -201,8 +210,35 @@
   line-height: 50px;
   background-color: #fff;
 }
-/* 768 */
+/* 1024 */
 @media screen and (max-width: 1024px) {
+  .header_icon {
+    gap: 0px;
+  }
+  .fa-user{
+    margin: 0 35px;
+  }
+  .header_such{
+    width: 350px;
+  }
+  .logo{
+    width: 25%;
+  }
+  .headerTop .inner{
+    align-items: center;
+  }
+  .h_cate{
+    width: 182px;
+  }
+  .h_b_right{
+    width: calc(100% - 182px);
+  }
+  .h_b_right a{
+    padding-left: 20px;
+  }
+}
+/* 768 */
+@media screen and (max-width: 768px) {
   .header_icon .fa-magnifying-glass{
     display:block;
   }
@@ -218,4 +254,6 @@
   .header_icon{
     gap: 30px;
   }
+  .fa-user{
+    margin: 0 ;
 }
