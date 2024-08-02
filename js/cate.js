@@ -47,6 +47,24 @@ window.addEventListener("load",function(){
 
 
     // 카테고리 클릭시 상품리스트 변경
-    const cateList = this.document.querySelectorAll(".cate-title > li")
-    const categorie = this.document.querySelector
+    const cateList = this.document.querySelectorAll(".cate-title > li > a")
+    
+    cateList.forEach(function(list){
+        list.addEventListener("click",function(e){
+            e.preventDefault()
+            cateList.forEach(function(lists){
+                lists.classList.remove("active")
+            })
+            this.classList.add("active")
+
+            const cateItems = document.querySelectorAll(".categorie");
+            cateItems.forEach(function (items) {
+                items.style.display = "none";
+            });
+
+            const target = this.getAttribute("href");
+            document.querySelector(target).style.display = "block";
+        })
+    })
+    cateList[0].click();
 })
