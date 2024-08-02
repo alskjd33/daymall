@@ -160,6 +160,10 @@
   font-size: 15PX;
   font-weight: 500;
 }
+/* 768카테고리 */
+.h_cate_2_768{
+  display: none;
+}
 /* 768 */
 @media screen and (max-width:1024px){
   .headerBottom{display: none;}
