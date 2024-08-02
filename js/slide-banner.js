@@ -14,4 +14,21 @@ window.addEventListener("load", function(){
             el: ".sw-banner .swiper-pagination",
         },
     })
+
+    // 모바일
+    const swMbBanner = new Swiper(".mb-sw-banner",{
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        loop:true,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".mb-sw-banner .bt-next",
+            prevEl: ".mb-sw-banner .bt-prev",
+        },
+        pagination: {
+            el: ".mb-sw-banner .swiper-pagination",
+        },
+    })
 })

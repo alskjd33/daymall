@@ -1,12 +1,16 @@
 window.addEventListener("load",function(){
     const swBest = new Swiper(".sw-best",{
         loop:true,
-        slidesPerView: 4,
-        spaceBetween: 60,
-        breakpoint:{
+        slidesPerView: 3,
+        // spaceBetween: 60,
+        breakpoints:{
+            768:{
+                slidesPerView: 3,
+                spaceBetween: 55,
+            },
             1025:{
                 slidesPerView: 4,
-                spaceBetween: 60,
+                spaceBetween: 55,
             },
             1281:{
                 slidesPerView: 4,
