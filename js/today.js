@@ -1,8 +1,8 @@
 window.addEventListener("load",function(){
     const swToday = new Swiper(".sw-today",{
         loop:true,
-        slidesPerView: 2.2,
-        spaceBetween: 51,
+        slidesPerView: 2.5,
+        spaceBetween: 30,
         breakpoints:{
             321:{
                 slidesPerView:2,

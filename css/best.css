@@ -147,26 +147,26 @@
 }
 @media screen and (max-width : 320px) {
     .item-img{
-        width: 120px;
-        height: 153.6px;
+        width: 100px;
+        height: 128px;
     }
     .item-bt{
-        width: 120px;
+        width: 100px;
     }
     .item-bt span{
-        width: 59px;
+        width: 49px;
         height: 20px;
         border-radius: 5px;
     }
     .item-bt span a{
-        font-size: 10px;
+        font-size: 9px;
         line-height: 18px;
     }
     .item-bt span a i{
         padding-top: 0px;
     }
     .item-info{
-        width: 120px;
+        width: 100px;
     }
     
 }

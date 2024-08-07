@@ -28,7 +28,6 @@
     vertical-align: middle;
     border: 0;
   }
-
   body { 
      font-family: "Noto Sans KR", sans-serif;
   }
@@ -45,7 +44,9 @@
   }
   .full-bt{
     display: block;
-    padding: 18px 180px;
+    /* padding: 18px 180px; */
+    width: 400px;
+    height: 60px;
     background-color: #fff;
     border: 1px solid #bebebe;
     border-radius: 10px;
@@ -108,20 +109,25 @@
       max-width: 768px;
       padding: 45px 30px 0;
     }
+    .full-bt{
+      width: 300px;
+
+    }
   }
   @media screen and (max-width : 768px) {
     .title{
       font-size: 24px;
     }
+  }
+  @media screen and (max-width : 480px) {
     .full-bt{
-      padding: 10px 50px;
+      width: 200px;
+      height: 50px;
       border-radius: 5px;
     }
     .full-bt a{
       font-size: 14px;
     }
-  }
-  @media screen and (max-width : 480px) {
     .sw-bt{
       width: 40px;
       height: 40px;
