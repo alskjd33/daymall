@@ -13,7 +13,11 @@ window.addEventListener("load", function () {
     });
   });
   //cate768 클릭시 나오기
-
+const bars = this.document.querySelector (".fa-bars")
+const hCate768 = this.document.querySelector (".h_cate768")
+bars.addEventListener("click" , function(){
+  hCate768.classList.toggle("active")
+})
   // 클릭시 서치바 나오기
 
 });

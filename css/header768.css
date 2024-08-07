@@ -9,12 +9,14 @@
   font-size: 20px;
   padding-left: 25px;
   align-items: center;
-  z-index: 9;
-
+  z-index: 9999;
+  display: none;
 }
-
-.h_cate768 a {
-  padding-left: 20px;
+.h_cate768.active{
+  display: block;
+}
+.h_cate768 li > a {
+  padding: 0 30px;
   font-weight: 500;
   color: #000;
 }
@@ -25,9 +27,8 @@
 
 #downBt {
   font-size: 15px;
-
 }
-.h_cate_1_768{
+.h_cate_1_768 {
   width: 100%;
 }
 .hCate1List_768 {
@@ -38,12 +39,20 @@
 }
 .h_cate_2_768 {
   /* display: none; */
+
 }
-.hCate1List_768 a{
-  width: 200px;
+.hCate1List_768 a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .hCate1List_768 button {
   color: #000;
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 0 0 0 20px;
+  font-weight: 500;
 }
 
 .h_cate_2_768 li a {
@@ -55,11 +64,20 @@
   line-height: 50px;
   background-color: #fff;
 }
-.header_icon_320{
+.header_icon_320  {
+  width: 100%;
   display: none;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #cfed6b;
+  line-height: 2.5;
+  padding: 0 30px;
 }
 /* 768 */
 @media screen and (max-width: 768px) {
+  .logo {
+    width: 170px;
+  }
   .header_icon .fa-magnifying-glass {
     display: block;
   }
@@ -79,10 +97,25 @@
   .fa-user {
     margin: 0;
   }
+  .header_icon a {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .h_cate768 {
+    top: 7%;
+    z-index: 9;
+  }
 }
 @media screen and (max-width: 632px) {
-  .logo{
-    width: ;
+  .h_cate768 {
+    top: 8%;
+    z-index: 9;
+  }
+}
+@media screen and (max-width: 570px) {
+  .logo {
+    width: calc(100% - 400p);
   }
   .h_cate768 {
     top: 8%;
@@ -96,19 +129,20 @@
   .header_icon > a > .fa-user {
     display: none;
   }
-    .header_icon > a > .fa-cart-shopping {
+  .header_icon > a > .fa-cart-shopping {
     display: none;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .headerTop .inner{
+@media screen and (max-width: 400px) {
+  .headerTop .inner {
     height: 80px;
   }
   .h_cate768 {
-    top: 7%;
+    top: 9%;
     width: 350px;
     z-index: 999;
+    text-align: center;
   }
   .logo {
     width: 50%;
@@ -124,10 +158,10 @@
     gap: 0px;
   }
   .header_icon_320 {
-    width: 100%;
     display: block;
-    height: 50px;
-    background-color: #cfed6b;
-    line-height: 2.5;
+    display: flex;
+  }
+  .fa-xmark {
+    font-size: 23px;
   }
 }

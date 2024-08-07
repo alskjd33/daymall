@@ -28,14 +28,7 @@
     vertical-align: middle;
     border: 0;
   }
-  button {
-    border: 0;
-    background-color: transparent;
-    color: #000;
-    font-size: 20px ;
-    padding: 0 0 0 20px  ;
-    font-weight: 500;
-  }
+
   body { 
      font-family: "Noto Sans KR", sans-serif;
   }
