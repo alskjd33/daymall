@@ -27,13 +27,13 @@
   font-size: 26px;
   color: #333;
   display: inline-block;
-margin-top: 40px;
+  margin-top: 40px;
 }
-.timesale-title p{
+.timesale-title p {
   font-size: 26px;
   color: #333;
   display: inline-block;
-margin:40px 0 0 5px;
+  margin: 40px 0 0 5px;
 }
 /* 왼쪽 */
 .time-item-info {
@@ -54,12 +54,12 @@ margin:40px 0 0 5px;
   margin-top: 15px;
   font-weight: bold;
 }
-.time-item-info-list{
+.time-item-info-list {
   font-size: 16px;
   color: #333;
   margin-top: 15px;
 }
-.time-item-info-lis{
+.time-item-info-lis {
   margin: 15px 0 15px 0;
 }
 /* 카운트다운 */
@@ -72,9 +72,37 @@ margin:40px 0 0 5px;
   font-size: 3em;
   margin-top: 20px;
 }
-/* 
-@media screen and (max-width:1280px) {
+
+/* @media screen and (max-width:1280px) {
   .time-item-info{
     width: 100%;
   }
 } */
+@media screen and (max-width: 735px) {
+  .timesale .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+  .timesale-title {
+    width: 100%;
+    text-align: center;
+  }
+  .timesale-title h2 br{
+    display: none;
+  }
+  .time-item-info img {
+    padding-top: 30px;
+  }
+  .timesale-title span{
+    font-size: 20px
+  }
+  #timer {
+    font-size: 25px;
+  }
+  .fa-clock {
+    font-size: 10px;
+  }
+  
+}
