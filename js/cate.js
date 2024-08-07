@@ -6,7 +6,7 @@ window.addEventListener("load",function(){
         breakpoints:{
             768:{
                 slidesPerView: 3,
-                spaceBetween: 55,
+                spaceBetween: 54,
             },
             1025:{
                 slidesPerView: 4,
@@ -29,7 +29,7 @@ window.addEventListener("load",function(){
         breakpoints:{
             768:{
                 slidesPerView: 3,
-                spaceBetween: 55,
+                spaceBetween: 54,
             },
             1025:{
                 slidesPerView: 4,
@@ -52,7 +52,7 @@ window.addEventListener("load",function(){
         breakpoints:{
             768:{
                 slidesPerView: 3,
-                spaceBetween: 55,
+                spaceBetween: 54,
             },
             1025:{
                 slidesPerView: 4,
@@ -75,7 +75,7 @@ window.addEventListener("load",function(){
         breakpoints:{
             768:{
                 slidesPerView: 3,
-                spaceBetween: 55,
+                spaceBetween: 54,
             },
             1025:{
                 slidesPerView: 4,
@@ -98,7 +98,7 @@ window.addEventListener("load",function(){
         breakpoints:{
             768:{
                 slidesPerView: 3,
-                spaceBetween: 55,
+                spaceBetween: 54,
             },
             1025:{
                 slidesPerView: 4,
