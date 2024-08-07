@@ -1,9 +1,33 @@
 window.addEventListener("load",function(){
     const swCateall = new Swiper(".sw-cateall", {
         loop:true,
-        slidesPerView: 3,
-        // spaceBetween: 51,
+        slidesPerView: 2.5,
+        spaceBetween: 30,
         breakpoints:{
+            321:{
+                slidesPerView:2,
+            },
+            350:{
+                slidesPerView:2.2,
+            },
+            400:{
+                slidesPerView:2.5,
+            },
+            470:{
+                slidesPerView:3,
+            },
+            481:{
+                slidesPerView:2.1,
+            },
+            520:{
+                slidesPerView:2.5,
+            },
+            570:{
+                slidesPerView:2.8,
+            },
+            630:{
+                slidesPerView:3,
+            },
             768:{
                 slidesPerView: 3,
                 spaceBetween: 54,
@@ -24,9 +48,33 @@ window.addEventListener("load",function(){
     } )
     const swCateFood = new Swiper(".sw-catefood", {
         loop:true,
-        slidesPerView: 3,
-        // spaceBetween: 51,
+        slidesPerView: 2.5,
+        spaceBetween: 30,
         breakpoints:{
+            321:{
+                slidesPerView:2,
+            },
+            350:{
+                slidesPerView:2.2,
+            },
+            400:{
+                slidesPerView:2.5,
+            },
+            470:{
+                slidesPerView:3,
+            },
+            481:{
+                slidesPerView:2.1,
+            },
+            520:{
+                slidesPerView:2.5,
+            },
+            570:{
+                slidesPerView:2.8,
+            },
+            630:{
+                slidesPerView:3,
+            },
             768:{
                 slidesPerView: 3,
                 spaceBetween: 54,
@@ -47,9 +95,33 @@ window.addEventListener("load",function(){
     } )
     const swCateLife = new Swiper(".sw-catelife", {
         loop:true,
-        slidesPerView: 3,
-        // spaceBetween: 51,
+        slidesPerView: 2.5,
+        spaceBetween: 30,
         breakpoints:{
+            321:{
+                slidesPerView:2,
+            },
+            350:{
+                slidesPerView:2.2,
+            },
+            400:{
+                slidesPerView:2.5,
+            },
+            470:{
+                slidesPerView:3,
+            },
+            481:{
+                slidesPerView:2.1,
+            },
+            520:{
+                slidesPerView:2.5,
+            },
+            570:{
+                slidesPerView:2.8,
+            },
+            630:{
+                slidesPerView:3,
+            },
             768:{
                 slidesPerView: 3,
                 spaceBetween: 54,
@@ -70,9 +142,33 @@ window.addEventListener("load",function(){
     } )
     const swCateKitchen = new Swiper(".sw-catekitchen", {
         loop:true,
-        slidesPerView: 3,
-        // spaceBetween: 51,
+        slidesPerView: 2.5,
+        spaceBetween: 30,
         breakpoints:{
+            321:{
+                slidesPerView:2,
+            },
+            350:{
+                slidesPerView:2.2,
+            },
+            400:{
+                slidesPerView:2.5,
+            },
+            470:{
+                slidesPerView:3,
+            },
+            481:{
+                slidesPerView:2.1,
+            },
+            520:{
+                slidesPerView:2.5,
+            },
+            570:{
+                slidesPerView:2.8,
+            },
+            630:{
+                slidesPerView:3,
+            },
             768:{
                 slidesPerView: 3,
                 spaceBetween: 54,
@@ -93,9 +189,33 @@ window.addEventListener("load",function(){
     } )
     const swCateDog = new Swiper(".sw-catedog", {
         loop:true,
-        slidesPerView: 3,
-        // spaceBetween: 51,
+        slidesPerView: 2.5,
+        spaceBetween: 30,
         breakpoints:{
+            321:{
+                slidesPerView:2,
+            },
+            350:{
+                slidesPerView:2.2,
+            },
+            400:{
+                slidesPerView:2.5,
+            },
+            470:{
+                slidesPerView:3,
+            },
+            481:{
+                slidesPerView:2.1,
+            },
+            520:{
+                slidesPerView:2.5,
+            },
+            570:{
+                slidesPerView:2.8,
+            },
+            630:{
+                slidesPerView:3,
+            },
             768:{
                 slidesPerView: 3,
                 spaceBetween: 54,
