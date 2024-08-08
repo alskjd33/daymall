@@ -18,6 +18,7 @@
   }
   html{
     font-size: 10px;
+    scroll-behavior: smooth;
   }
   a {
     text-decoration: none;
@@ -30,6 +31,25 @@
   }
   body { 
      font-family: "Noto Sans KR", sans-serif;
+  }
+  /* 탑버튼 */
+  #gotop {
+    position: fixed;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+    background-color: #fff;
+    padding: 7px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+  }
+  #gotop img{
+    height: 100%;
+    transform: rotate(270deg);
   }
   /* 공통영역 */
   .inner{
