@@ -42,7 +42,9 @@
     font-size: 13px;
     padding-top: 10px;
 }
-
+.ft-bottom-left p br{
+    display: none;
+}
 /* 푸터 하단 오른쪽 */
 .ft-bottom-right{
     display: flex;
@@ -76,4 +78,56 @@
     width: 50px;
     height: 50px;
     background-color: #333;
+}
+
+@media screen and (max-width : 768px) {
+    .company-intro{
+        display: flex;
+        padding: 15px 20px;
+        font-size: 12px;
+        gap: 5px;
+        max-width: 430px;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .ft-logo{
+        width: 150px;
+        margin: 0 auto 10px;
+    }
+    .ft-bottom > .inner{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ft-bottom-left p{
+        font-size: 12px;
+        text-align: center;
+    }
+   
+    .ft-bottom-right{
+        justify-content: center;
+        gap: 10px;
+    }
+    .sns{
+        justify-content: center;
+    }
+    .sns li p{
+        font-size: 12px;
+    }
+    .sns li i{
+        font-size: 35px;
+    }
+    .QR{
+        justify-content: center;
+    }
+    .QR li{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 480px){
+    .company-intro{
+        font-size: 11px;
+    }
+    .ft-bottom-left p br{
+        display: block;
+    }
 }
