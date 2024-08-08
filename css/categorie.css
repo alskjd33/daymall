@@ -71,3 +71,32 @@
     height: 215px;
   }
 }
+@media screen and (max-width: 600px) {
+  .cate-title a{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cate-title a{
+    font-size: 15px;
+  }
+  
+}
+@media screen and (max-width: 450px) {
+  .cate-title a{
+    font-size: 14px;
+  }
+  
+}
+@media screen and (max-width: 400px) {
+  .cate-title{
+    flex-wrap: wrap;
+  }
+  .cate-title li{
+    width: calc(100% / 3);
+  }
+  .cate-title a{
+    font-size: 14px;
+  }
+  
+}
