@@ -1,6 +1,6 @@
 window.addEventListener("load",function(){
             // 개발자가 설정한 특정 날짜와 시간 (예: 2024년 8월 2일 24시)
-            const targetDate = new Date('2024-08-06 24:00:00').getTime();
+            const targetDate = new Date('2024-08-09 24:00:00').getTime();
 
             function startCountdown(targetDate) {
                 const countdownInterval = setInterval(() => {
