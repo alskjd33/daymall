@@ -47,6 +47,10 @@
     <title>Daymall</title>
   </head>
   <body>
+    <!-- top btn -->
+    <button id="gotop">
+      <img src="images/angle-right-solid.svg" alt="">
+    </button>
     <!-- header_top -->
     <div class="header">
       <div class="headerTop">
@@ -123,11 +127,11 @@
           <div class="h_b_right">
             <!-- 메뉴 -->
             <ul class="h_menu">
-              <li><a href="#">신상품</a></li>
-              <li><a href="#">베스트</a></li>
-              <li><a href="#">세일중</a></li>
-              <li><a href="#">쿠폰</a></li>
-              <li><a href="#">1DAY배송</a></li>
+              <li><a href="#coupon">쿠폰</a></li>
+              <li><a href="#best">베스트</a></li>
+              <li><a href="#today">세일중</a></li>
+              <li><a href="#oneday">1DAY배송</a></li>
+              <li><a href="#cate">인기상품</a></li>
             </ul>
             <!-- 로그인/회원가입 -->
             <div class="login">
@@ -271,7 +275,7 @@
     </div>
     <!-- </div> -->
     <!-- coupon -->
-    <div class="coupon">
+    <div class="coupon" id="coupon">
       <div class="inner">
         <h2 class="title">오늘의 쿠폰</h2>
         <div class="coupon-slide">
@@ -310,7 +314,7 @@
       </div>
     </div>
     <!-- best -->
-    <div class="best">
+    <div class="best" id="best">
       <div class="inner">
         <h2 class="title">실시간 베스트 상품</h2>
         <div class="best-slide">
@@ -623,7 +627,7 @@
       </div>
     </div>
     <!-- today -->
-    <div class="today">
+    <div class="today" id="today">
       <div class="inner">
         <h2 class="title">투데이 세일 상품</h2>
         <div class="today-slide">
@@ -977,7 +981,7 @@
       </div>
     </div>
     <!-- oneday -->
-    <div class="oneday">
+    <div class="oneday" id="oneday">
       <div class="inner">
         <h2 class="title">원데이 배송 상품</h2>
         <div class="oneday-slide">
@@ -1290,7 +1294,7 @@
       </div>
     </div>
     <!--cate  -->
-    <div class="cate">
+    <div class="cate" id="cate">
       <div class="inner">
         <h2 class="title">카테고리별 인기상품</h2>
         <ul class="cate-title">
