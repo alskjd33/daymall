@@ -12,13 +12,18 @@ window.addEventListener("load", function () {
       cate1.classList.toggle("active");
     });
   });
-  //cate768 클릭시 나오기
+  //cate768 클릭시 대카테고리 나오기
   const bars = this.document.querySelector(".fa-bars");
   const hCate768 = this.document.querySelector(".h_cate768");
+  const xmark = this.document.querySelector(".fa-xmark");
   bars.addEventListener("click", function () {
     hCate768.classList.toggle("active");
   });
-  // 클릭시 서치바 나오기
+  //클릭시 카테고리 닫기
+  xmark.addEventListener("click",function(){
+    hCate768.classList.remove("active");
+  })
+  // 클릭시 소카테고리 나오기
 });
 $(document).ready(function () {
   $(".hCate1List_768").click(function () {

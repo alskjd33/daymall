@@ -3,7 +3,7 @@
 .h_cate768 {
   position: absolute;
   right: 0;
-  top: 8%;
+  /* top: 20%; */
   width: 232px;
   z-index: 9999;
   display: none;
@@ -15,7 +15,9 @@
   padding: 0 30px;
   font-weight: 500;
   color: #000;
+  font-size: 16px;
 }
+
 .h_cate768 .fa-bars {
   font-size: 30px;
   color: #000;
@@ -29,11 +31,9 @@
   right: 0;
   top: 0;
   width: 100%;
-  background-color: brown;
 }
 .hCate1List_768 {
   width: 100%;
-
   line-height: 50px;
   background-color: #cfed6b;
 }
@@ -63,13 +63,16 @@
   display: none;
 }
 .header_icon_320 {
+  position: absolute;
+  bottom: 7%;
   width: 100%;
   display: none;
   justify-content: space-between;
+  align-items: center;
   height: 50px;
   background-color: #cfed6b;
-  line-height: 2.5;
   padding: 0 30px;
+  font-size: 20px;
 }
 /* 768 */
 @media screen and (max-width: 768px) {
@@ -102,24 +105,18 @@
 }
 @media screen and (max-width: 730px) {
   .h_cate768 {
-    top: 7%;
+    top: 9%;
     z-index: 9;
   }
 }
 @media screen and (max-width: 632px) {
-  .h_cate768 {
-    top: 8%;
-    z-index: 9;
-  }
+
 }
 @media screen and (max-width: 570px) {
   .logo {
     width: calc(100% - 400p);
   }
-  .h_cate768 {
-    top: 8%;
-    z-index: 9;
-  }
+
 }
 @media screen and (max-width: 400px) {
   .header_icon > a > .fa-magnifying-glass {
@@ -138,8 +135,8 @@
     height: 80px;
   }
   .h_cate768 {
-    top: 9%;
-    width: 350px;
+    top: 15%;
+    width: 100%;
     z-index: 999;
     text-align: center;
   }
@@ -159,6 +156,7 @@
   .header_icon_320 {
     display: block;
     display: flex;
+
   }
   .fa-xmark {
     font-size: 23px;
