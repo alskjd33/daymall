@@ -16,24 +16,25 @@
 }
 .timesale-title .title {
   line-height: 40px;
-  margin: 0 0 20px;
+
 }
 .timesale-title span {
   font-size: 14px;
   color: #333;
 }
-
+.timesale-title li:nth-child(2){
+margin-bottom: 20px ;
+}
 .timesale-title i {
   font-size: 26px;
   color: #333;
   display: inline-block;
-  margin-top: 40px;
 }
 .timesale-title p {
   font-size: 26px;
   color: #333;
   display: inline-block;
-  margin: 40px 0 0 5px;
+  /* margin: 40px 0 0 5px; */
 }
 /* 왼쪽 */
 .time-item-info {
@@ -70,7 +71,7 @@
 }
 #timer {
   font-size: 3em;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 /* @media screen and (max-width:1280px) {
@@ -89,14 +90,14 @@
     width: 100%;
     text-align: center;
   }
-  .timesale-title h2 br{
+  .timesale-title h2 br {
     display: none;
   }
   .time-item-info img {
     padding-top: 30px;
   }
-  .timesale-title span{
-    font-size: 20px
+  .timesale-title span {
+    font-size: 20px;
   }
   #timer {
     font-size: 25px;
@@ -104,5 +105,34 @@
   .fa-clock {
     font-size: 10px;
   }
-  
+}
+@media screen and (max-width: 480px) {
+  .timesale-title li:nth-child(2){
+    margin-bottom: 10px ;
+  }
+  .timesale-title span {
+    font-size: 18px;
+  }
+  .timesale-title i {
+    font-size: 20px;
+  }
+  #timer {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .time-item-info img {
+    padding-top: 15px;
+  }
+  .time-item-info .item-info-list h3 {
+    font-size: 15px;
+  }
+  .time-item-info .item-info-list   b {
+    font-size: 16px !important
+  }
+  .time-item-info.item-info-list  b  span{
+    font-size: 16px;
+  }
+  .time-item-info .item-info-list .review  {
+    font-size: 12px !important
+  }
 }
