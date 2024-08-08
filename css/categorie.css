@@ -58,6 +58,16 @@
 
 @media screen and (max-width : 1280px){
   .cate-swiper-area{
-    height: 386px;
+    height: 366px;
+  }
+}
+@media screen and (max-width : 480px){
+  .cate-swiper-area{
+    height: 284px;
+  }
+}
+@media screen and (max-width : 320px){
+  .cate-swiper-area{
+    height: 215px;
   }
 }

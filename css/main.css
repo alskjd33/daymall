@@ -118,15 +118,19 @@
     .title{
       font-size: 24px;
     }
+    .inner{
+      padding: 30px 20px 0;
+    }
   }
   @media screen and (max-width : 480px) {
     .full-bt{
-      width: 200px;
-      height: 50px;
+      width: 170px;
+      height: 45px;
       border-radius: 5px;
+      margin: 30px auto 0;
     }
     .full-bt a{
-      font-size: 14px;
+      font-size: 12px;
     }
     .sw-bt{
       width: 40px;
