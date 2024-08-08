@@ -18,3 +18,6 @@
     bottom: 0px;
     padding-top: 15px;
 }
+.coupon .swiper-pagination-bullet{
+    background-color: #333;
+}
