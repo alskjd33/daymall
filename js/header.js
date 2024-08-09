@@ -24,6 +24,22 @@ window.addEventListener("load", function () {
     hCate768.classList.remove("active");
   })
   // 클릭시 소카테고리 나오기
+  //태블릿 에서 서치아이콘 클릭시 서치바 나오기
+  const tabSearchBtn = this.document.querySelector(".header_icon .fa-magnifying-glass")
+  const tabSearch = this.document.querySelector(".tab-search")
+  tabSearchBtn.addEventListener("click",function(){
+    tabSearch.classList.toggle("active")
+  })
+  // 모바일 에서 서치아이콘 클릭시 서치바 나오기
+  const mbSearchBtn = this.document.querySelector(".header_icon_320 .fa-magnifying-glass")
+  const mbSearch = this.document.querySelector(".mb-search")
+  const mbSearchClose = this.document.querySelector(".mb-search .fa-xmark")
+  mbSearchBtn.addEventListener("click",function(){
+    mbSearch.classList.add("active")
+  })
+  mbSearchClose.addEventListener("click",function(){
+    mbSearch.classList.remove("active")
+  })
 });
 $(document).ready(function () {
   $(".hCate1List_768").click(function () {
