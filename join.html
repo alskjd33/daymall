@@ -42,6 +42,7 @@
     <script src="js/oneday.js"></script>
     <script src="js/cate.js"></script>
     <script src="js/timesale.js"></script>
+    <script src="js/join.js"></script>
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Daymall</title>
@@ -52,7 +53,7 @@
       <div class="headerTop">
         <div class="inner">
           <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="로고" class="header_Logo" href="index.html"/></a>
+            <a href="index.html"><img src="images/logo.png" alt="로고" class="header_Logo" href="index.html" /></a>
           </div>
           <div class="header_such">
             <input type="text" />
@@ -131,8 +132,8 @@
             </ul>
             <!-- 로그인/회원가입 -->
             <div class="login">
-              <a href="#">로그인</a>
-              <a href="#">회원가입</a>
+              <a href="login.html">로그인</a>
+              <a href="join.html">회원가입</a>
             </div>
           </div>
         </div>
@@ -205,22 +206,39 @@
         </ul>
       </div>
     </div>
-    <!-- login -->
-    <div class="login-page">
+    <!-- join -->
+    <div class="join-page">
       <div class="inner">
-        <h1>로그인</h1>
+        <h1>회원가입</h1>
+        <span><b>*</b>필수입력사항</span>
         <form>
-          <input type="text" placeholder="아이디를 입력해주세요"/>
-          <input type="text" placeholder="비밀번호를 입력해주세요"/>
+          <ul>
+            <li><label for="id"><p>아이디<b>*</b></p></label><input type="text" placeholder="아이디를 입력해주세요" id="id" /></li>
+          <li><label for="passW"><p>비밀번호<b>*</b></p></label><input type="text" placeholder="비밀번호를 입력해주세요" id="passW" /></li>
+          <li><label for="passWc"><p>비밀번호확인<b>*</b></p></label><input type="text" placeholder="비밀번호를 한번 더 입력해주세요" id="passWc"/></li>
+        <li><label for="name"><p>이름<b>*</b></p></label><input type="text" placeholder="이름을 입력해주세요" id="name"/></li>
+        <li><label for="email"><p>이메일<b>*</b></p></label><input type="text" placeholder="예:daymall @ " id="email" /></li>
+        <li><label for="phonN"><p>휴대폰<b>*</b></p></label><input type="text" placeholder="숫자만 입력해주세요 " id="phonN"/></li>
+      <li><p>주소<b>*</b></p><button><i class="fa-solid fa-magnifying-glass"></i>주소검색</button></li>  
+      </ul>
         </form>
-        <ul>
-          <li><a href="#">아이디 찾기 </a></li>
-          <li><a href="#"> 비밀번호 찾기</a></li>
-        </ul>
-        <div class="btns">
-          <button class="loginBt">로그인</button>
-          <button class="joinBt">회원가입</button>
-        </div>
+        <fieldset>
+          <legend>성별</legend>
+          <div>
+            <input type="checkbox" name="gender" value="men" onclick='checkOnlyOne(this)'/>
+            <label for="coding">남성</label>
+          </div>
+          <div>
+            <input type="checkbox" name="gender" value="woman" onclick='checkOnlyOne(this)'/>
+            <label for="coding">여성</label>
+          </div>
+          <div>
+            <input type="checkbox" name="gender" value="nothing" onclick='checkOnlyOne(this)'/>
+            <label for="coding">선택안함</label>
+          </div>
+        </fieldset>
+        <form><label for="bht"><p>생년월일</p> </label><input type="text" placeholder="YYYY / MM / DD " id="bht"/>
+        </form>
       </div>
     </div>
     <!--footer  -->
@@ -240,7 +258,7 @@
         <div class="inner">
           <div class="ft-bottom-left">
             <div class="ft-logo">
-              <a href="index.html"><img src="images/logo.png" alt="로고" class="header_Logo" href="index.html"/></a>
+              <a href="index.html"><img src="images/logo.png" alt="로고" class="header_Logo" href="index.html" /></a>
             </div>
             <p>서울특별시 강남구 데헤란로 231 <br />사업자등록번호:123-1236-566 <br /></p>
             <p>대표자 : 홍길동 daymall@daymall.com <br />전화번호 123-155-1155</p>
