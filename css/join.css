@@ -127,6 +127,7 @@ line-height: 40px;
   font-weight: bold;
   margin: 0 auto ;
   display: block;
+  cursor: pointer;
 }
 .joinGo:hover {
   background-color: #92c420;
