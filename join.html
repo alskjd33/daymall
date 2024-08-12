@@ -268,7 +268,7 @@
               <p class="genDer-title">성별</p>
               <ul>
                 <li>
-                  <input type="radio" name="gender" value="men"  />
+                  <input type="radio" name="gender" value="men" />
                   <label for="coding">남성</label>
                 </li>
                 <li>
@@ -286,6 +286,13 @@
             <label for="bht"><p>생년월일</p> </label><input type="text" placeholder="YYYY / MM / DD " id="bht" />
           </form> -->
           <button class="joinGo">가입하기</button>
+          <script>
+            const joinGo = document.querySelector(".joinGo");
+            joinGo.addEventListener("click", function () {
+              alert("가입이 완료되었습니다.")
+              location.href = "login.html"
+            });
+          </script>
         </div>
       </div>
     </div>
