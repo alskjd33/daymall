@@ -1,1 +1,92 @@
 @charset "utf-8";
+.join-page {
+  height: calc(100vh - 200px);
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join-page .inner {
+  max-width: 350px;
+  padding-bottom: 100px;
+}
+.join-info li > input:focus {
+  outline: none;
+}
+
+.join-title {
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  position: relative;
+}
+.join-title h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.join-title span {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  font-size: 11px;
+}
+.join-title span > b {
+  color: red;
+}
+.join-wrap {
+  font-size: 14px;
+  padding: 20px;
+}
+.join-info ul {
+  width: 100%;
+}
+.join-info li {
+  display: flex;
+  margin-bottom: 10px;
+}
+.join-info li > label > p > b {
+  color: red;
+}
+.join-info li > p > b {
+  color: red;
+}
+
+.join-info li > button {
+  height: 40px;
+  width: 60%;
+  border: 1px solid #a6dd24;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.join-info li > button > i {
+  font-size: 12px;
+}
+.fieldset {
+  width: 100%;
+  height: 40px;
+
+}
+
+/* .bht-info {
+  width: 100%;
+  margin: 30px;
+  height: 40px;
+  display: flex;
+}
+.bht-info > input {
+  outline: none;
+} */
+.joinGo {
+  border: 1px solid #a6dd24;
+  border-radius: 2px;
+  background-color: #a6dd24;
+  color: #333;
+  width: 50%;
+  height: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.joinGo:hover {
+  background-color: #92c420;
+}
