@@ -34,7 +34,7 @@ align-items: center;
 
 }
 .login-page form >input:focus{
-    outline: 1px solid #333;
+    outline: none;
 } 
 .login-page ul{
     display: flex; 
@@ -73,4 +73,10 @@ align-items: center;
     border-radius: 2px;
     background-color: #fff;
     color: #333;
+}
+.loginBt:hover{
+    background-color:#92c420;
+}
+.joinBt:hover{
+color: #92c420;
 }

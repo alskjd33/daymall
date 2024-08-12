@@ -41,8 +41,6 @@
     <script src="js/today.js"></script>
     <script src="js/oneday.js"></script>
     <script src="js/cate.js"></script>
-    <script src="js/timesale.js"></script>
-    <script src="js/join.js"></script>
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Daymall</title>
@@ -53,12 +51,18 @@
       <div class="headerTop">
         <div class="inner">
           <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="로고" class="header_Logo" href="index.html" /></a>
+            <a href="index.html"><img src="images/logo.png" alt="로고" class="header_Logo" /></a>
           </div>
           <div class="header_such">
             <input type="text" />
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
+          <!-- 태블릿 서치 -->
+          <form class="tab-search">
+            <input type="text" />
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </form>
+
           <!--아이콘 -->
           <div class="header_icon">
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -124,11 +128,11 @@
           <div class="h_b_right">
             <!-- 메뉴 -->
             <ul class="h_menu">
-              <li><a href="#">신상품</a></li>
-              <li><a href="#">베스트</a></li>
-              <li><a href="#">세일중</a></li>
-              <li><a href="#">쿠폰</a></li>
-              <li><a href="#">1DAY배송</a></li>
+              <li><a href="#coupon">쿠폰</a></li>
+              <li><a href="#best">베스트</a></li>
+              <li><a href="#today">세일중</a></li>
+              <li><a href="#oneday">1DAY배송</a></li>
+              <li><a href="#cate">인기상품</a></li>
             </ul>
             <!-- 로그인/회원가입 -->
             <div class="login">
@@ -147,6 +151,14 @@
           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <a href="#"><i class="fa-solid fa-xmark"></i></a>
         </div>
+        <!-- 모바일 서치 -->
+        <form class="mb-search">
+          <input type="text" />
+          <div class="mb-searchbar-btn">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+        </form>
         <ul class="h_cate_1_768">
           <li class="hCate1List_768">
             <a href="#"
@@ -209,36 +221,71 @@
     <!-- join -->
     <div class="join-page">
       <div class="inner">
-        <h1>회원가입</h1>
-        <span><b>*</b>필수입력사항</span>
-        <form>
-          <ul>
-            <li><label for="id"><p>아이디<b>*</b></p></label><input type="text" placeholder="아이디를 입력해주세요" id="id" /></li>
-          <li><label for="passW"><p>비밀번호<b>*</b></p></label><input type="text" placeholder="비밀번호를 입력해주세요" id="passW" /></li>
-          <li><label for="passWc"><p>비밀번호확인<b>*</b></p></label><input type="text" placeholder="비밀번호를 한번 더 입력해주세요" id="passWc"/></li>
-        <li><label for="name"><p>이름<b>*</b></p></label><input type="text" placeholder="이름을 입력해주세요" id="name"/></li>
-        <li><label for="email"><p>이메일<b>*</b></p></label><input type="text" placeholder="예:daymall @ " id="email" /></li>
-        <li><label for="phonN"><p>휴대폰<b>*</b></p></label><input type="text" placeholder="숫자만 입력해주세요 " id="phonN"/></li>
-      <li><p>주소<b>*</b></p><button><i class="fa-solid fa-magnifying-glass"></i>주소검색</button></li>  
-      </ul>
+        <div class="join-title">
+          <h1>회원가입</h1>
+          <span><b>*</b>필수입력사항</span>
+        </div>
+        <div class="join-wrap">
+          <form class="join-info">
+            <ul>
+              <li>
+                <label for="id"
+                  ><p>아이디<b>*</b></p></label
+                ><input type="text" placeholder="아이디를 입력해주세요" id="id" />
+              </li>
+              <li>
+                <label for="passW"
+                  ><p>비밀번호<b>*</b></p></label
+                ><input type="text" placeholder="비밀번호를 입력해주세요" id="passW" />
+              </li>
+              <li>
+                <label for="passWc"
+                  ><p>비밀번호확인<b>*</b></p></label
+                ><input type="text" placeholder="비밀번호를 한번 더 입력해주세요" id="passWc" />
+              </li>
+              <li>
+                <label for="name"
+                  ><p>이름<b>*</b></p></label
+                ><input type="text" placeholder="이름을 입력해주세요" id="name" />
+              </li>
+              <li>
+                <label for="email"
+                  ><p>이메일<b>*</b></p></label
+                ><input type="text" placeholder="예:daymall @ " id="email" />
+              </li>
+              <li>
+                <label for="phonN"
+                  ><p>휴대폰<b>*</b></p></label
+                ><input type="text" placeholder="숫자만 입력해주세요 " id="phonN" />
+              </li>
+              <li>
+                <p>주소<b>*</b></p>
+                <button><i class="fa-solid fa-magnifying-glass"></i>주소 검색</button>
+              </li>
+            </ul>
+
+          <fieldset>
+            <legend>성별</legend>
+            <div>
+              <input type="radio" name="gender" value="men" onclick="checkOnlyOne(this)" />
+              <label for="coding">남성</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" value="woman" onclick="checkOnlyOne(this)" />
+              <label for="coding">여성</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" value="nothing" onclick="checkOnlyOne(this)" />
+              <label for="coding">선택안함</label>
+            </div>
+          </fieldset>
+
         </form>
-        <fieldset>
-          <legend>성별</legend>
-          <div>
-            <input type="checkbox" name="gender" value="men" onclick='checkOnlyOne(this)'/>
-            <label for="coding">남성</label>
-          </div>
-          <div>
-            <input type="checkbox" name="gender" value="woman" onclick='checkOnlyOne(this)'/>
-            <label for="coding">여성</label>
-          </div>
-          <div>
-            <input type="checkbox" name="gender" value="nothing" onclick='checkOnlyOne(this)'/>
-            <label for="coding">선택안함</label>
-          </div>
-        </fieldset>
-        <form><label for="bht"><p>생년월일</p> </label><input type="text" placeholder="YYYY / MM / DD " id="bht"/>
-        </form>
+          <!-- <form class="bht-info">
+            <label for="bht"><p>생년월일</p> </label><input type="text" placeholder="YYYY / MM / DD " id="bht" />
+          </form> -->
+          <button class="joinGo">가입하기</button>
+        </div>
       </div>
     </div>
     <!--footer  -->

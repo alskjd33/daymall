@@ -41,7 +41,6 @@
     <script src="js/today.js"></script>
     <script src="js/oneday.js"></script>
     <script src="js/cate.js"></script>
-    <script src="js/timesale.js"></script>
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Daymall</title>
@@ -52,12 +51,18 @@
       <div class="headerTop">
         <div class="inner">
           <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="로고" class="header_Logo" href="index.html"/></a>
+            <a href="index.html"><img src="images/logo.png" alt="로고" class="header_Logo" /></a>
           </div>
           <div class="header_such">
             <input type="text" />
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
+          <!-- 태블릿 서치 -->
+           <form class="tab-search">
+            <input type="text">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+           </form>
+          
           <!--아이콘 -->
           <div class="header_icon">
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -123,16 +128,16 @@
           <div class="h_b_right">
             <!-- 메뉴 -->
             <ul class="h_menu">
-              <li><a href="#">신상품</a></li>
-              <li><a href="#">베스트</a></li>
-              <li><a href="#">세일중</a></li>
-              <li><a href="#">쿠폰</a></li>
-              <li><a href="#">1DAY배송</a></li>
+              <li><a href="#coupon">쿠폰</a></li>
+              <li><a href="#best">베스트</a></li>
+              <li><a href="#today">세일중</a></li>
+              <li><a href="#oneday">1DAY배송</a></li>
+              <li><a href="#cate">인기상품</a></li>
             </ul>
             <!-- 로그인/회원가입 -->
             <div class="login">
-              <a href="#">로그인</a>
-              <a href="#">회원가입</a>
+              <a href="login.html">로그인</a>
+              <a href="join.html">회원가입</a>
             </div>
           </div>
         </div>
@@ -146,10 +151,17 @@
           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <a href="#"><i class="fa-solid fa-xmark"></i></a>
         </div>
+        <!-- 모바일 서치 -->
+        <form class="mb-search">
+          <input type="text">
+          <div class="mb-searchbar-btn">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+        </form>
         <ul class="h_cate_1_768">
           <li class="hCate1List_768">
-            <a href="#"
-              ><p>식품</p>
+            <a href="#"><p>식품</p>
               <i class="fa-solid fa-chevron-down" id="downBt"></i>
             </a>
             <ul class="h_cate_2_768">
@@ -167,8 +179,7 @@
             </ul>
           </li>
           <li class="hCate1List_768">
-            <a href="#"
-              ><p>생활용품</p>
+            <a href="#"><p>생활용품</p>
               <i class="fa-solid fa-chevron-down" id="downBt"></i>
             </a>
             <ul class="h_cate_2_768">
@@ -179,8 +190,7 @@
             </ul>
           </li>
           <li class="hCate1List_768">
-            <a href="#"
-              ><p>주방잡화</p>
+            <a href="#"><p>주방잡화</p>
               <i class="fa-solid fa-chevron-down" id="downBt"></i>
             </a>
             <ul class="h_cate_2_768">
@@ -191,8 +201,7 @@
             </ul>
           </li>
           <li class="hCate1List_768">
-            <a href="#"
-              ><p>반려동물</p>
+            <a href="#"><p>반려동물</p>
               <i class="fa-solid fa-chevron-down" id="downBt"></i>
             </a>
             <ul class="h_cate_2_768">
@@ -219,7 +228,7 @@
         </ul>
         <div class="btns">
           <button class="loginBt">로그인</button>
-          <button class="joinBt">회원가입</button>
+          <button class="joinBt" type="button" ><a href="join.html">회원가입</a></button>
         </div>
       </div>
     </div>
