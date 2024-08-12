@@ -264,23 +264,24 @@
               </li>
             </ul>
 
-          <fieldset>
-            <legend>성별</legend>
-            <div>
-              <input type="radio" name="gender" value="men" onclick="checkOnlyOne(this)" />
-              <label for="coding">남성</label>
+            <div class="genDer">
+              <p class="genDer-title">성별</p>
+              <ul>
+                <li>
+                  <input type="radio" name="gender" value="men"  />
+                  <label for="coding">남성</label>
+                </li>
+                <li>
+                  <input type="radio" name="gender" value="woman" />
+                  <label for="coding">여성</label>
+                </li>
+                <li>
+                  <input type="radio" name="gender" value="nothing" />
+                  <label for="coding">선택안함</label>
+                </li>
+              </ul>
             </div>
-            <div>
-              <input type="radio" name="gender" value="woman" onclick="checkOnlyOne(this)" />
-              <label for="coding">여성</label>
-            </div>
-            <div>
-              <input type="radio" name="gender" value="nothing" onclick="checkOnlyOne(this)" />
-              <label for="coding">선택안함</label>
-            </div>
-          </fieldset>
-
-        </form>
+          </form>
           <!-- <form class="bht-info">
             <label for="bht"><p>생년월일</p> </label><input type="text" placeholder="YYYY / MM / DD " id="bht" />
           </form> -->
