@@ -38,8 +38,8 @@
   #gotop {
     position: fixed;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
@@ -51,8 +51,8 @@
     cursor: pointer;
   }
   #gotop img{
+    transform: scale(0.8);
     height: 100%;
-    transform: rotate(270deg);
   }
   /* 공통영역 */
   .inner{
